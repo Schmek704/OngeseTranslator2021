@@ -15,7 +15,7 @@ def trans(phrase):
 
 # Introducing the user to the newest language in town!
 st.title("Ongese Language Translator")
-st.write("This function is made available publicly by Dan and E McKeon")
+st.write("This function is made available publicly by Dan McKeon and his helper E")
 
 word = st.text_input("\n\nPlease enter a word or phrase:  ")
 if word:
