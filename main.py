@@ -7,7 +7,7 @@ def trans(phrase):
     translation = ""
     for letter in phrase:
         if letter.lower() in "bcdfghjklmnpqrstvwxyz":  # Checking for consonants to add "ong" to the end
-            translation = translation + letter + "ong"
+            translation = translation + letter + "ong "
         else:
             translation = translation + letter + " "  # if not a consonant then letter in the word remains unchanged
     return translation
@@ -21,4 +21,4 @@ word = st.text_input("\n\nPlease enter a word or phrase:  ")
 if word:
     st.write("\nWelcome to the world of Ongese!!!")
     st.write("\nThe translation of your phrase in Ongese is:")
-    st.write("\n\n" + trans(word))
+    st.header("\n\n" + trans(word))
