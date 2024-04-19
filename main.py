@@ -1,6 +1,6 @@
 # Ongese Translator
 
-import streamlit as st
+#import streamlit as st
 
 # Defining the Function
 def trans(phrase):
@@ -14,11 +14,19 @@ def trans(phrase):
 # Asking the User for Input
 
 # Introducing the user to the newest language in town!
-st.title("Ongese Language Translator")
-st.write("This function is made available publicly by Dan McKeon and his helper E")
+#st.title("Ongese Language Translator")
+#st.write("This function is made available publicly by Dan McKeon and his helper E")
 
-word = st.text_input("\n\nPlease enter a word or phrase:  ")
-if word:
-    st.write("\nWelcome to the world of Ongese!!!")
-    st.write("\nThe translation of your phrase in Ongese is:")
-    st.header("\n\n" + trans(word))
+#word = st.text_input("\n\nPlease enter a word or phrase:  ")
+#if word:
+ #   st.write("\nWelcome to the world of Ongese!!!")
+ #   st.write("\nThe translation of your phrase in Ongese is:")
+ #   st.header("\n\n" + trans(word))
+# Introducing the user to the newest language in town!
+next = ''
+while next.lower() != 'n':
+	word = input("\n\nPlease enter a word or phrase:  ")
+	print("\n\nWelcome to the world of Ongese!!!")
+	print("\nThe translation of your phrase in Ongese is:")
+	print("\n\n" + trans(word))
+	next = input('\n\nWanna play again??  (y/n)  ')
