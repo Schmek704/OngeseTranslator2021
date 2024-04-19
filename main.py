@@ -1,6 +1,6 @@
 # Ongese Translator
 
-#import streamlit as st
+import streamlit as st
 
 # Defining the Function
 def trans(phrase):
